@@ -1,7 +1,11 @@
 import Link from "next/link";
-import { BiCycling } from "react-icons/bi";
+import { BiCycling, BiShoppingBag } from "react-icons/bi";
 import { GiHamburger } from "react-icons/gi";
-const Nav = () => {
+import { HiBars3BottomRight } from "react-icons/hi2";
+interface Props {
+  openNav: () => void;
+}
+const Nav = ({ openNav }: Props) => {
   return (
     <div className="h-[12vh] bg-white">
       <div className="sm:w-[90%] w-[95%] mx-auto h-[100%] flex items-center justify-between">
@@ -32,12 +36,27 @@ const Nav = () => {
         </ul>
         {/* buttons */}
         <div className="flex items-center space-x-4">
-          <button className="px-6 py-2 sm:px-8 sm:py-3 text-[14px] sm:text-[16px] bg:blue-950 transiltion-all duration-200 hover:red flex items-center rounded-md space-x-2 text-white">
+          <button
+            className="px-6 py-2 sm:px-8 sm:py-3 text-[14px] sm:text-[16px] bg-blue-800
+           transiltion-all duration-200 hover:red flex items-center rounded-md space-x-2 text-white"
+          >
             <span>
               <BiCycling className="w-[1.3rem] h-[1.3rem] sm:w-[1.7rem] sm:h-[1.3rem] " />
             </span>
             <span>Order Now</span>
           </button>
+          <button
+            className="px-6 py-2 sm:px-8 sm:py-3 text-[14px] sm:text-[16px] bg-orange-500
+           transiltion-all duration-200 hover:red flex items-center rounded-md space-x-2 text-white"
+          >
+            <span>
+              <BiShoppingBag className="w-[1.3rem] h-[1.3rem] sm:w-[1.7rem] sm:h-[1.3rem] " />
+            </span>
+          </button>
+          <HiBars3BottomRight
+            onClick={openNav}
+            className="lg:hidden w-[2rem] h-[2rem] text-black"
+          />
         </div>
       </div>
     </div>
