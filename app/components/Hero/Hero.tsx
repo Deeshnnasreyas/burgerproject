@@ -47,8 +47,7 @@ const Hero = () => {
               Fast Food Burger
             </h1>
             <h1 className="text-[90px] leading-[5rem] uppercase text-white font-bold">
-              Best <br />
-              Burger
+              Best <br />Burger
             </h1>
             <p className="mt-[1rem] text-white text-opacity-70 text-[18px]">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
