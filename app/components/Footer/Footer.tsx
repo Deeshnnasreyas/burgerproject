@@ -81,7 +81,7 @@ const Footer = () => {
         </div>
       </div>
       {/* copy right */}
-      <p className="text-center text-white opacity-50 mt-[1.5rem]">
+      <p className="text-center text-white opacity-50 mt-[1.5rem] mb-[3rem]">
         Copyright &#169; 2024{" "}
         <span className="text-yellow-300">Deeshna Sreyas</span>.All rights
         reserved
